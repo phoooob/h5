@@ -1,0 +1,376 @@
+@charset "utf-8";
+body,
+html,
+.page {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/*渐变函数*/
+.duration-12 {
+  -webkit-animation-duration: 12s;
+  -moz-animation-duration: 12s;
+  -o-animation-duration: 12s;
+  animation-duration: 12s;
+}
+/*延迟函数*/
+.delay-1 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay-2 {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.delay-3 {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.delay-4 {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.delay-5 {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.delay-6 {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.delay-7 {
+  -webkit-animation-delay: 7s;
+  -moz-animation-delay: 7s;
+  -o-animation-delay: 7s;
+  animation-delay: 7s;
+}
+/*定位函数*/
+.duration-3 {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+}
+.duration-2 {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.duration-6 {
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.page-group {
+  width: 100%;
+  height: 100%;
+}
+.page-group .page-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  display: none;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /*loving第二页*/
+  /*loving第三页*/
+  /*第四*/
+}
+.page-group .page-item .words {
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #fff;
+}
+.page-group .page-item.active {
+  display: block;
+}
+.page-group .page-item.loving-first {
+  background-image: url(../images/loving/2.png);
+}
+.page-group .page-item.loving-first .boy-section .boy {
+  position: absolute;
+  right: 110px;
+  top: 0;
+  width: 160px;
+  z-index: 2;
+}
+.page-group .page-item.loving-first .boy-section .car {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  width: auto;
+}
+.page-group .page-item.loving-first .boy-section .car2 {
+  position: absolute;
+  right: 1px;
+  top: 25px;
+}
+.page-group .page-item.loving-first .center-point {
+  margin-top: 60%;
+  text-align: center;
+}
+.page-group .page-item.loving-first .girl-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.page-group .page-item.loving-first .girl-section .girl {
+  width: 235px;
+}
+.page-group .page-item.loving-first .girl-section .words {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50%;
+}
+.page-group .page-item.loving-second {
+  background-image: url(../images/loving/13.png);
+}
+.page-group .page-item.loving-second .girl-section .girl {
+  position: absolute;
+  width: 100px;
+  right: 115px;
+  top: 65px;
+  z-index: 2;
+}
+.page-group .page-item.loving-second .girl-section .tree {
+  position: absolute;
+  right: -10px;
+  top: -30px;
+  width: 241px;
+}
+.page-group .page-item.loving-second .heart {
+  margin-top: 40%;
+  padding-left: 50px;
+}
+.page-group .page-item.loving-second .words {
+  position: absolute;
+  left: auto;
+  top: 30%;
+  right: 20px;
+  bottom: auto;
+  width: 50%;
+}
+.page-group .page-item.loving-second .boy-section .deng {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.page-group .page-item.loving-second .boy-section .deng2 {
+  position: absolute;
+  left: -9px;
+  bottom: -16px;
+}
+.page-group .page-item.loving-second .boy-section .boy {
+  position: absolute;
+  left: 45px;
+  bottom: 0;
+  width: 210px;
+}
+.page-group .page-item.loving-second .boy-section .cao {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -4px;
+  bottom: -46px;
+  width: 157px;
+}
+.page-group .page-item.loving-third {
+  background-image: url(../images/loving/15.png);
+}
+.page-group .page-item.loving-third .words {
+  margin-top: 20%;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+.page-group .page-item.loving-third .garden-group .garden2 {
+  position: absolute;
+  left: -185px;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  width: auto;
+}
+.page-group .page-item.loving-third .garden-group .garden {
+  position: absolute;
+  left: -135px;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  width: auto;
+}
+.page-group .page-item.loving-third .garden-group .garden3 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -36px;
+  bottom: 0;
+  width: 560px;
+}
+.page-group .page-item.loving-third .garden-group .garden4 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -53px;
+  bottom: 10px;
+  width: auto;
+}
+.page-group .page-item.loving-third .garden-group .garden5 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -34px;
+  bottom: 10px;
+  width: auto;
+}
+.page-group .page-item.loving-third .garden-group .garden7 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 85px;
+  width: auto;
+}
+.page-group .page-item.loving-third .garden-group .garden8 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 48px;
+  width: auto;
+}
+.page-group .page-item.loving-third .garden-group .garden9 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -42px;
+  bottom: 0;
+  width: auto;
+}
+.page-group .page-item.loving-third .garden-group .garden10 {
+  position: absolute;
+  left: 50px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  width: auto;
+}
+.page-group .page-item.loving-third .garden-group .garden11 {
+  position: absolute;
+  left: -14px;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  width: 110px;
+}
+.page-group .page-item.loving-third .garden-group .garden12 {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  right: auto;
+  bottom: auto;
+  width: auto;
+}
+.page-group .page-item.loving-fourth {
+  background-image: url(../images/loving/27.png);
+}
+.page-group .page-item.loving-fourth .words {
+  position: absolute;
+  left: auto;
+  top: 20%;
+  right: 5px;
+  bottom: auto;
+  width: 50%;
+  margin-right: 20px;
+}
+.page-group .page-item.loving-fourth .garden-group .garden1 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 27%;
+  bottom: 42%;
+  width: auto;
+}
+.page-group .page-item.loving-fourth .garden-group .garden2 {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  right: auto;
+  bottom: auto;
+  width: auto;
+  width: 144px;
+}
+.page-group .page-item.loving-fourth .garden-group .garden3 {
+  position: absolute;
+  left: -18px;
+  top: 97px;
+  right: auto;
+  bottom: auto;
+  width: auto;
+}
+.page-group .page-item.loving-fourth .garden-group .garden4 {
+  position: absolute;
+  left: 17px;
+  top: 129px;
+  right: auto;
+  bottom: auto;
+  width: auto;
+}
+.page-group .page-item.loving-fourth .garden-group .garden5 {
+  position: absolute;
+  left: 49px;
+  top: 44px;
+  right: auto;
+  bottom: auto;
+  width: auto;
+}
+.page-group .page-item.loving-fourth .garden-group .garden6 {
+  position: absolute;
+  left: 40px;
+  top: auto;
+  right: auto;
+  bottom: 126px;
+  width: auto;
+}
+.page-group .page-item.loving-fourth .garden-group .garden7 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -21px;
+  bottom: 0;
+  width: auto;
+}
+.page-group .page-item.loving-fourth .garden-group .garden8 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  width: auto;
+}

@@ -1,0 +1,290 @@
+@charset "utf-8";
+@base-bagc : #fff ;
+
+
+
+body , html , .page {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/*渐变函数*/
+.duration(@durations:1s){
+  -webkit-animation-duration: @durations;
+  -moz-animation-duration: @durations;
+  -o-animation-duration: @durations;
+  animation-duration: @durations;
+}
+
+.duration-12{
+  .duration(12s)
+}
+
+/*延迟函数*/
+.delay(@time:1s){
+  -webkit-animation-delay: @time;
+  -moz-animation-delay: @time;
+  -o-animation-delay: @time;
+  animation-delay: @time;
+}
+
+.delay-1{
+  .delay(1s)
+}
+
+.delay-2{
+  .delay(2s);
+}
+.delay-3{
+  .delay(3s)
+}
+.delay-4{
+  .delay(4s)
+}
+.delay-5{
+  .delay(5s)
+}
+.delay-6{
+  .delay(6s)
+}
+.delay-7{
+  .delay(7s)
+}
+
+/*定位函数*/
+.pl(@left : 0 ; @top : 0 ; @width : auto){
+  position: absolute;
+  left: @left;
+  top:@top ;
+  width : @width ;
+}
+
+.pr(@right : 0 ; @top : 0 ; @width : auto){
+  position: absolute;
+  right: @right;
+  top:@top ;
+  width : @width ;
+}
+
+.position(@left:auto ; @top : auto ; @right : auto ; @bottom:auto ; @width : auto){
+  position: absolute;
+  left: @left;
+  top: @top;
+  right: @right;
+  bottom: @bottom;
+  width: @width;
+}
+
+.duration-3{
+  .duration(3s);
+}
+
+.duration-2{
+  .duration(2s);
+}
+
+.duration-6{
+  .duration(6s);
+}
+
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.clear{
+  clear: both;
+}
+
+.page-group{
+  width: 100%;
+  height: 100%;
+  .page-item{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: @base-bagc;
+    position: relative;
+    display: none;
+    -webkit-background-size: cover;
+    background-size: cover;
+    .words{
+      font-size: 18px;
+      text-shadow: 1px 1px 1px #fff;
+    }
+    &.active{
+      display: block;
+    }
+    &.loving-first{
+      background-image: url(../images/loving/2.png);
+      .boy-section{
+        .boy{
+          .pr(110px , 0 ,160px);
+          z-index: 2;
+        }
+        .car{
+          .pr(5px , 15px);
+        }
+        .car2{
+          position: absolute;
+          right: 1px;
+          top: 25px;
+        }
+      }
+      .center-point{
+        margin-top: 60%;
+        text-align: center;
+      }
+      .girl-section{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .girl{
+          width: 235px;
+        }
+        .words{
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          width: 50%;
+        }
+      }
+    }
+
+    /*loving第二页*/
+    &.loving-second{
+      background-image: url(../images/loving/13.png);
+      .girl-section{
+        .girl{
+          position: absolute;
+          width: 100px;
+          right: 115px;
+          top: 65px;
+          z-index: 2;
+        }
+        .tree{
+          position: absolute;
+          right: -10px;
+          top: -30px;
+          width: 241px;
+        }
+      }
+      .heart{
+        margin-top: 40%;
+        padding-left: 50px;
+      }
+      .words{
+        .position(auto , 30% , 20px , auto , 50%);
+      }
+      .boy-section{
+        .deng {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+        .deng2{
+          position: absolute;
+          left: -9px;
+          bottom: -16px;
+        }
+        .boy{
+          position: absolute;
+          left: 45px;
+          bottom: 0;
+          width: 210px;
+        }
+        .cao{
+          .position(auto , auto , -4px , -46px , 157px);
+        }
+      }
+    }
+
+    /*loving第三页*/
+    &.loving-third{
+      background-image: url(../images/loving/15.png);
+      .words{
+        margin-top: 20%;
+        margin-left: 40px;
+        margin-right: 30px;
+      }
+      .garden-group{
+        .garden2{
+          .position(-185px);
+        }
+        .garden{
+          .position(-135px);
+        }
+        .garden3{
+          .position(auto , auto , -36px , 0 , 560px);
+        }
+        .garden4{
+          .position(auto , auto , -53px , 10px )
+        }
+        .garden5{
+          .position(auto,auto,-34px,10px)
+        }
+        .garden7{
+          .position(auto , auto , 0 , 85px )
+        }
+        .garden8{
+          .position(auto,auto,0 ,48px)
+        }
+        .garden9{
+          .position(auto,auto,-42px,0)
+        }
+        .garden10{
+          .position(50px,auto,0,0)
+        }
+        .garden11{
+          .position(-14px,auto,auto,0 ,110px)
+        }
+        .garden12{
+          .position(20%,40%)
+        }
+      }
+    }
+    
+    /*第四*/
+    &.loving-fourth{
+      background-image: url(../images/loving/27.png);
+      .words{
+        .position(auto,20%,5px,auto,50%) ;
+        margin-right: 20px;
+      }
+      .garden-group{
+        .garden1{
+          .position(auto,auto,27%,42%)
+        }
+        .garden2{
+          .position(30px,15px);
+          width: 144px;
+        }
+        .garden3{
+          .position(-18px,97px)
+        }
+        .garden4{
+          .position(17px,129px)
+        }
+        .garden5{
+          .position(49px,44px)
+        }
+        .garden6{
+          .position(40px,auto,auto,126px)
+        }
+        .garden7{
+          .position(auto,auto,-21px,0)
+        }
+        .garden8{
+          .position(auto,auto,0,0)
+        }
+      }
+    }
+
+
+
+  }
+}

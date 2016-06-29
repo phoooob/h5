@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+    <div class="page">
+        <div class="page-group">
+
+            <!--第一页-->
+            <div class="page-item  loving-first">
+                <!--小男孩-->
+                <div class="boy-section">
+                    <img class="boy animated fadeInLeft  duration-6" src="../images/loving/4.png" alt=""/>
+                    <div class="animated fadeInRight duration-6">
+                        <img class="car" src="../images/loving/3.png" alt=""/>
+                        <img class="car2" src="../images/loving/5.png" alt=""/>
+                    </div>
+                </div>
+                <!--心形-->
+                <div class="center-point animated pulse infinite">
+                    <img src="../images/loving/6.png" alt=""/>
+                </div>
+                <!--小女孩-->
+                <div class="girl-section">
+                    <img src="../images/loving/1.png" alt="" class="girl animated bounce infinite duration-3"/>
+                    <p class="text-holder words">
+                        宝贝，不知不觉我已经陪伴你走过了600个日日夜夜，你还记得咱们在一起的点点滴滴吗？
+                    </p>
+                </div>
+            </div>
+
+            <!--第二页-->
+            <div class="page-item loving-second">
+                <div class="girl-section">
+                    <img src="../images/loving/9.png" alt="" class="girl animated fadeInLeft delay-2 duration-2"/>
+                    <img src="../images/loving/10.png" alt="" class="tree animated fadeIn duration-2"/>
+                </div>
+                <div class="heart animated pulse infinite">
+                    <img src="../images/loving/6.png" alt=""/>
+                </div>
+                <p class="text-holder words animated fadeInRight delay-2">
+                    相信你都已经忘得差不多了吧，我的小可爱，那我就给你回忆一下吧^_^
+                </p>
+                <div class="boy-section">
+                    <img src="../images/loving/11.png" alt="" class="deng animated bounceInLeft"/>
+                    <img src="../images/loving/14.png" alt="" class="deng2 animated bounceInLeft"/>
+                    <img src="../images/loving/7.png" alt="" class="boy animated zoomInRight duration-6"/>
+                    <img src="../images/loving/12.png" alt="" class="cao animated wobble infinite duration-12" />
+                </div>
+            </div>
+
+            <!--第三页-->
+            <div class="page-item  loving-third">
+                <div class="garden-group">
+                    <img src="../images/loving/17.png" alt="" class="garden2 animated fadeIn delay-1"/>
+                    <img src="../images/loving/16.png" alt="" class="garden animated fadeIn delay-1"/>
+                    <img src="../images/loving/24.png" alt="" class="garden9 animated fadeIn delay-2"/>
+                    <img src="../images/loving/23.png" alt="" class="garden8 animated fadeIn delay-3"/>
+                    <img src="../images/loving/19.png" alt="" class="garden4 animated fadeIn delay-5"/>
+                    <img src="../images/loving/20.png" alt="" class="garden5 animated fadeIn delay-4"/>
+                    <img src="../images/loving/18.png" alt="" class="garden3 animated fadeIn delay-4"/>
+                    <img src="../images/loving/21.gif" alt="" class="garden7 animated fadeIn delay-5"/>
+                    <img src="../images/loving/26.png" alt="" class="garden11 animated fadeInLeft delay-6"/>
+                    <img src="../images/loving/25.png" alt="" class="garden10 animated fadeInRight delay-7"/>
+                    <img src="../images/loving/6.png" alt="" class="garden12 animated pulse infinite"/>
+                </div>
+                <div class="text-holder words animated fadeInUp">
+                    2014年我遇见了你，你是那么美，我对你一见倾心，开始了漫长的追求之路。
+                </div>
+            </div>
+
+            <!--第四页-->
+            <div class="page-item active loving-fourth">
+                <div class="garden-group">
+                    <img src="../images/loving/6.png" alt="" class="garden1 animated pulse infinite"/>
+                    <img src="../images/loving/22.gif" alt="" class="garden5 animated bounceInDown"/>
+                    <img src="../images/loving/28.png" alt="" class="garden2 animated bounceInDown"/>
+                    <img src="../images/loving/30.png" alt="" class="garden4 animated bounceInLeft delay-2"/>
+                    <img src="../images/loving/29.png" alt="" class="garden3 animated bounceInUp delay-1"/>
+                    <img src="../images/loving/21.gif" alt="" class="garden6 "/>
+                    <img src="../images/loving/32.png" alt="" class="garden8 animated fadeInRight delay-3"/>
+                    <img src="../images/loving/31.png" alt="" class="garden7 animated fadeInLeft delay-4"/>
+                </div>
+                <div class="text-holder words animated fadeInUp">
+                    11月咱们一起去了嵩山，有欢也有喜，下次一定紧随你身后，不放松一点警惕。
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/zepto.min.js"></script>
+    <script>
+        $('.page-group .page-item').on('swipeUp' ,function(){
+            alert();
+            var showing = $('.page-group .active');
+            showing.removeClass('active');
+            var next = showing.next();
+            if(next.length == 0){
+                next = showing.parents('.page').find('.page-group .page-item').eq(0);
+            }
+            next.addClass('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <link rel="stylesheet" href="../css/test.css"/>
+</head>
+<body>
+
+    <div class="time-item">
+        <div class="time ">
+            <a href="javascript:;" class="">06:00</a>
+            <div class="sleeper">
+                <span class="text">06:00</span>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="../js/zepto.min.js"></script>
+<script>
+    var time = $('.time');
+    var item = $('.time-item');
+    var times ;
+    time.remove();
+    for(var i = 6 ; i < 22 ; i++){
+        times = "" ;
+        if(i < 10){
+            times = "0" + i ;
+        }else{
+            times = i ;
+        }
+        times += ":00" ;
+        time.find('a , .sleeper .text').text(times);
+        item.append(time.clone());
+    }
+</script>
+
+</body>
+</html>
