@@ -56,6 +56,9 @@ body {
   color: #ffffff;
   width: 100%;
 }
+.time .is_off {
+  color: #e0e0e0;
+}
 @keyframes width {
   0% {
     width: 0;

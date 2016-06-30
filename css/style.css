@@ -85,6 +85,9 @@ html,
 .clear {
   clear: both;
 }
+.page-item .garden-group img {
+  position: absolute;
+}
 .page-group {
   width: 100%;
   height: 100%;
@@ -101,6 +104,8 @@ html,
   /*loving第二页*/
   /*loving第三页*/
   /*第四*/
+  /*第五*/
+  /*第七*/
 }
 .page-group .page-item .words {
   font-size: 18px;
@@ -170,7 +175,6 @@ html,
   padding-left: 50px;
 }
 .page-group .page-item.loving-second .words {
-  position: absolute;
   left: auto;
   top: 30%;
   right: 20px;
@@ -194,7 +198,6 @@ html,
   width: 210px;
 }
 .page-group .page-item.loving-second .boy-section .cao {
-  position: absolute;
   left: auto;
   top: auto;
   right: -4px;
@@ -210,7 +213,6 @@ html,
   margin-right: 30px;
 }
 .page-group .page-item.loving-third .garden-group .garden2 {
-  position: absolute;
   left: -185px;
   top: auto;
   right: auto;
@@ -218,7 +220,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-third .garden-group .garden {
-  position: absolute;
   left: -135px;
   top: auto;
   right: auto;
@@ -226,7 +227,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-third .garden-group .garden3 {
-  position: absolute;
   left: auto;
   top: auto;
   right: -36px;
@@ -234,7 +234,6 @@ html,
   width: 560px;
 }
 .page-group .page-item.loving-third .garden-group .garden4 {
-  position: absolute;
   left: auto;
   top: auto;
   right: -53px;
@@ -242,7 +241,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-third .garden-group .garden5 {
-  position: absolute;
   left: auto;
   top: auto;
   right: -34px;
@@ -250,7 +248,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-third .garden-group .garden7 {
-  position: absolute;
   left: auto;
   top: auto;
   right: 0;
@@ -258,7 +255,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-third .garden-group .garden8 {
-  position: absolute;
   left: auto;
   top: auto;
   right: 0;
@@ -266,7 +262,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-third .garden-group .garden9 {
-  position: absolute;
   left: auto;
   top: auto;
   right: -42px;
@@ -274,7 +269,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-third .garden-group .garden10 {
-  position: absolute;
   left: 50px;
   top: auto;
   right: 0;
@@ -282,7 +276,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-third .garden-group .garden11 {
-  position: absolute;
   left: -14px;
   top: auto;
   right: auto;
@@ -290,7 +283,6 @@ html,
   width: 110px;
 }
 .page-group .page-item.loving-third .garden-group .garden12 {
-  position: absolute;
   left: 20%;
   top: 40%;
   right: auto;
@@ -301,7 +293,6 @@ html,
   background-image: url(../images/loving/27.png);
 }
 .page-group .page-item.loving-fourth .words {
-  position: absolute;
   left: auto;
   top: 20%;
   right: 5px;
@@ -310,7 +301,6 @@ html,
   margin-right: 20px;
 }
 .page-group .page-item.loving-fourth .garden-group .garden1 {
-  position: absolute;
   left: auto;
   top: auto;
   right: 27%;
@@ -318,7 +308,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-fourth .garden-group .garden2 {
-  position: absolute;
   left: 30px;
   top: 15px;
   right: auto;
@@ -327,7 +316,6 @@ html,
   width: 144px;
 }
 .page-group .page-item.loving-fourth .garden-group .garden3 {
-  position: absolute;
   left: -18px;
   top: 97px;
   right: auto;
@@ -335,7 +323,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-fourth .garden-group .garden4 {
-  position: absolute;
   left: 17px;
   top: 129px;
   right: auto;
@@ -343,7 +330,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-fourth .garden-group .garden5 {
-  position: absolute;
   left: 49px;
   top: 44px;
   right: auto;
@@ -351,7 +337,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-fourth .garden-group .garden6 {
-  position: absolute;
   left: 40px;
   top: auto;
   right: auto;
@@ -359,7 +344,6 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-fourth .garden-group .garden7 {
-  position: absolute;
   left: auto;
   top: auto;
   right: -21px;
@@ -367,10 +351,99 @@ html,
   width: auto;
 }
 .page-group .page-item.loving-fourth .garden-group .garden8 {
-  position: absolute;
   left: auto;
   top: auto;
   right: 0;
   bottom: 0;
   width: auto;
+}
+.page-group .page-item.loving-five {
+  background-image: url(../images/loving/39.png);
+}
+.page-group .page-item.loving-five .garden-group .garden {
+  top: -40px;
+  left: 0;
+  width: 100%;
+}
+.page-group .page-item.loving-five .garden-group .garden1 {
+  left: 20px;
+  top: -10px;
+}
+.page-group .page-item.loving-five .garden-group .garden2 {
+  left: -20px;
+  top: -20px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.page-group .page-item.loving-five .garden-group .garden3 {
+  left: 0;
+  top: 80px;
+  width: 250px;
+}
+.page-group .page-item.loving-five .garden-group .garden4 {
+  right: 10px;
+  bottom: -15px;
+}
+.page-group .page-item.loving-five .garden-group .garden5 {
+  left: 52px;
+  top: 229px;
+  width: 180px;
+}
+.page-group .page-item.loving-five .garden-group .garden6 {
+  left: 29px;
+  top: 233px;
+  width: 180px;
+}
+.page-group .page-item.loving-five .garden-group .garden7 {
+  right: 20%;
+  top: 30%;
+}
+.page-group .page-item.loving-five .garden-group .garden8 {
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.page-group .page-item.loving-five .garden-group .img-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/loving/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-group .page-item.loving-five .words {
+  width: 70%;
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+}
+.page-group .page-item.loving-seven {
+  background-image: url(../images/loving/41.png);
+}
+.page-group .page-item.loving-seven .garden-group .img-holder {
+  width: 180px;
+  height: 180px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  top: 30px;
+  left: 50%;
+  margin-left: -90px;
+  border: 12px solid #DD033F;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-group .page-item.loving-seven .garden-group .garden {
+  bottom: 30%;
+  left: 45%;
+}
+.page-group .page-item.loving-seven .words {
+  margin-top: 230px;
+  text-align: center;
 }
