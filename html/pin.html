@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../css/test.css"/>
+</head>
+<body>
+    <img src="../images/pin.jpg" alt="" class="banner-img"/>
+
+
+    <script>
+        $('body').on('click','.toCarpool',function(){
+            var ts = $(this);
+            if(ts.hasClass('btn-disabled')){
+                return false ;
+            }
+            //如果没有选择拼车时段，则return
+            var actives = $('.time.active');
+            if(actives.length == 0){
+                NP_component.small('请选择拼车时段');
+                return false ;
+            }
+            //搜集数据
+            var times = [] ;
+            var schedules = [] ;
+            actives.each(function(){
+                var content = $(this).find('.content');
+                times.push(content.text().trim());
+                schedules.push(content.data('id'));
+            });
+            var postJson = {
+                order_id : ts.data('id') ,
+                times : times ,
+                schedule_ids : schedules
+            } ;
+            var url = NP.config.host + "/update/carpool" ;
+            $.post(url , function(result){
+
+            },'json');
+        });
+    </script>
+</body>
+</html>
