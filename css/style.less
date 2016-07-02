@@ -1,6 +1,23 @@
 @charset "utf-8";
 @base-bagc : #fff ;
 
+body{
+  background : rgba(255, 102, 153, 0.16) ;
+  margin:0 ;
+  font-family:'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif
+}
+a , span{
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 
 body , html , .page {
@@ -9,6 +26,56 @@ body , html , .page {
   padding: 0;
   margin: 0;
 }
+
+.page{
+  display: none;
+}
+.page-show{
+  display: block;
+}
+
+.text-holder{
+  textarea , input{
+    display: none;
+  }
+}
+.edit{
+  .text-body{
+    display: none;
+  }
+  .edit-area{
+    display: inline-block;
+  }
+}
+
+.img-holder{
+  .upload-img{
+    display: none;
+  }
+}
+
+.edit{
+  .img-holder{
+    display: none;
+  }
+  .upload-img{
+    display: inline-block;
+  }
+}
+.text-left{
+  text-align: left!important;
+}
+.text-right{
+  text-align: right!important;
+}
+.text-center{
+  text-align: center!important;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
 
 /*渐变函数*/
 .duration(@durations:1s){
@@ -30,18 +97,36 @@ body , html , .page {
   animation-delay: @time;
 }
 
+.delay-0-5{
+  .delay(0.5s)
+}
+
 .delay-1{
   .delay(1s)
+}
+
+.delay-1-5{
+  .delay(1.5s)
 }
 
 .delay-2{
   .delay(2s);
 }
+
+.delay-2-5{
+  .delay(2.5s);
+}
 .delay-3{
   .delay(3s)
 }
+.delay-3-5{
+  .delay(3.5s)
+}
 .delay-4{
-  .delay(4s)
+   .delay(4s)
+ }
+.delay-4-5{
+  .delay(4.5s)
 }
 .delay-5{
   .delay(5s)
@@ -102,6 +187,19 @@ body , html , .page {
   position: absolute;
 }
 
+textarea , input{
+  padding: 5px;
+  border: 2px dotted #0FEFD5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,.3);
+}
+
+textarea:focus , textarea:visited{
+  outline: none;
+}
+
 .page-group{
   width: 100%;
   height: 100%;
@@ -114,6 +212,9 @@ body , html , .page {
     display: none;
     -webkit-background-size: cover;
     background-size: cover;
+    .text-holder{
+      font-size: 18px;
+    }
     .words{
       font-size: 18px;
       text-shadow: 1px 1px 1px #fff;
@@ -386,8 +487,253 @@ body , html , .page {
       }
     }
 
+    /*封面*/
+    &.cover-love{
+      text-align: center;
+      background-color: rgb(248, 145, 166);
+      .lover-font{
+        width: 80%;
+        margin-top: 40px;
+      }
+      .text-holder{
+        color: #ffffff;
+        margin-top: 20px;
+      }
+    }
+    
+    /*封面2*/
+    &.cover-romantic{
+      background-image: url(../images/lover/cover-bag1.png);
+      background-repeat: repeat;
+      .cover-body{
+        padding: 15px;
+        img{
+          width: 100%;
+        }
+        .flower{
+          position: relative;
+          top: -80px;
+        }
+        .font{
+          position: relative;
+          top: -120px;
+        }
+      }
+      .text-group{
+        position: absolute;
+        top: 30px;
+        padding:50px 70px 0;
+        .text-holder:first-child{
+          margin-bottom: 20px;
+        }
+        .text-justify{
+          text-indent: 20px;
+        }
+        .text-holder:last-child{
+          margin-top: 20px;
+        }
+      }
+    }
 
+    /*单图1*/
+    &.one-pic{
+      text-align: center;
+      .top{
+        height: 190px;
+        background-color: rgb(30, 24, 55);
+        color: #ffffff;
+        text-align: center;
+        padding-top:50px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 24px;
+      }
+      .img-holder{
+        position: relative;
+        top: -67px;
+        img , .upload-img{
+          width: 130px;
+          height: 130px;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+          border: 2px solid #e0e0e0;
+        }
+        .upload-img{
+          line-height: 130px;
+          border-style: dotted;
+          background-color: #fff;
+        }
+      }
+      .text-group {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: -50px;
+        &:after{
+          content: '';
+          display: table;
+          clear: both;
+        }
+        .text-holder{
+          float: left;
+          padding: 10px 7px;
+          line-height: 22px;
+          font-size: 14px;
+          .text-body{
+            width: 14px;
+          }
+          textarea{
+            width: 14px;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &.endPage{
+      background-image: url(../images/lover/cover-bg3.png);
+      background-repeat: repeat;
+      -webkit-background-size: 25% 25%;
+      background-size: 25% 25%;
+      .top{
+        height: 50%;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        padding-top: 30%;
+        color: rgb(12, 137, 137);
+        &:last-child{
+          border-bottom: none;
+        }
+        a{
+          display: block;
+        }
+
+        .iconfont{
+          font-size: 40px;
+          margin-bottom: 10px;
+          display: block;
+        }
+      }
+
+    }
 
   }
 }
+
+.page-list{
+  .item{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-height: 600px;
+    overflow: hidden;
+    margin: 10px 0;
+    .page-item{
+      display: block;
+    }
+  }
+}
+
+.menu-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  color:#fff;
+  background-color: #2e3548;
+  z-index: 9999;
+  display: flex;
+  .menu-item{
+    flex: 1;
+    -ms-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-webkit-flex: 1;
+    -ms-webkit-flex: 1;
+    -o-webkit-flex: 1;
+    webkit-flex: 1;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.wrapper{
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9995;
+  display: none;
+}
+
+.menu-list{
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  padding: 10px;
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .item{
+    float: left;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    .iconfont{
+      display: block;
+        border: 1px solid #ffffff;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      margin: 0 auto 10px;
+      background-color: #fff;
+      color: #000;
+      &.back{
+        line-height: 31px;
+        padding-left: 3px;
+      }
+      &.up{
+        line-height: 31px;
+      }
+      &.left{
+        border-left: 2px solid #000;
+      }
+      &.right{
+        border-right: 2px solid #000;
+      }
+
+    }
+  }
+}
+
+.round{
+  border: 1px solid #e0e0e0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 28px;
+  padding: 0 18px;
+  margin-top: 9px;
+}
+
+
+
+
 

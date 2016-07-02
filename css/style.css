@@ -1,4 +1,20 @@
 @charset "utf-8";
+body {
+  background: rgba(255, 102, 153, 0.16);
+  margin: 0 ;
+  font-family: 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+}
+a,
+span {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body,
 html,
 .page {
@@ -6,6 +22,43 @@ html,
   width: 100%;
   padding: 0;
   margin: 0;
+}
+.page {
+  display: none;
+}
+.page-show {
+  display: block;
+}
+.text-holder textarea,
+.text-holder input {
+  display: none;
+}
+.edit .text-body {
+  display: none;
+}
+.edit .edit-area {
+  display: inline-block;
+}
+.img-holder .upload-img {
+  display: none;
+}
+.edit .img-holder {
+  display: none;
+}
+.edit .upload-img {
+  display: inline-block;
+}
+.text-left {
+  text-align: left!important;
+}
+.text-right {
+  text-align: right!important;
+}
+.text-center {
+  text-align: center!important;
+}
+.text-justify {
+  text-align: justify;
 }
 /*渐变函数*/
 .duration-12 {
@@ -15,11 +68,23 @@ html,
   animation-duration: 12s;
 }
 /*延迟函数*/
+.delay-0-5 {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
 .delay-1 {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -o-animation-delay: 1s;
   animation-delay: 1s;
+}
+.delay-1-5 {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 .delay-2 {
   -webkit-animation-delay: 2s;
@@ -27,17 +92,35 @@ html,
   -o-animation-delay: 2s;
   animation-delay: 2s;
 }
+.delay-2-5 {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
 .delay-3 {
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
   -o-animation-delay: 3s;
   animation-delay: 3s;
 }
+.delay-3-5 {
+  -webkit-animation-delay: 3.5s;
+  -moz-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
 .delay-4 {
   -webkit-animation-delay: 4s;
   -moz-animation-delay: 4s;
   -o-animation-delay: 4s;
   animation-delay: 4s;
+}
+.delay-4-5 {
+  -webkit-animation-delay: 4.5s;
+  -moz-animation-delay: 4.5s;
+  -o-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 .delay-5 {
   -webkit-animation-delay: 5s;
@@ -88,6 +171,19 @@ html,
 .page-item .garden-group img {
   position: absolute;
 }
+textarea,
+input {
+  padding: 5px;
+  border: 2px dotted #0FEFD5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+textarea:focus,
+textarea:visited {
+  outline: none;
+}
 .page-group {
   width: 100%;
   height: 100%;
@@ -106,6 +202,12 @@ html,
   /*第四*/
   /*第五*/
   /*第七*/
+  /*封面*/
+  /*封面2*/
+  /*单图1*/
+}
+.page-group .page-item .text-holder {
+  font-size: 18px;
 }
 .page-group .page-item .words {
   font-size: 18px;
@@ -446,4 +548,231 @@ html,
 .page-group .page-item.loving-seven .words {
   margin-top: 230px;
   text-align: center;
+}
+.page-group .page-item.cover-love {
+  text-align: center;
+  background-color: #f891a6;
+}
+.page-group .page-item.cover-love .lover-font {
+  width: 80%;
+  margin-top: 40px;
+}
+.page-group .page-item.cover-love .text-holder {
+  color: #ffffff;
+  margin-top: 20px;
+}
+.page-group .page-item.cover-romantic {
+  background-image: url(../images/lover/cover-bag1.png);
+  background-repeat: repeat;
+}
+.page-group .page-item.cover-romantic .cover-body {
+  padding: 15px;
+}
+.page-group .page-item.cover-romantic .cover-body img {
+  width: 100%;
+}
+.page-group .page-item.cover-romantic .cover-body .flower {
+  position: relative;
+  top: -80px;
+}
+.page-group .page-item.cover-romantic .cover-body .font {
+  position: relative;
+  top: -120px;
+}
+.page-group .page-item.cover-romantic .text-group {
+  position: absolute;
+  top: 30px;
+  padding: 50px 70px 0;
+}
+.page-group .page-item.cover-romantic .text-group .text-holder:first-child {
+  margin-bottom: 20px;
+}
+.page-group .page-item.cover-romantic .text-group .text-justify {
+  text-indent: 20px;
+}
+.page-group .page-item.cover-romantic .text-group .text-holder:last-child {
+  margin-top: 20px;
+}
+.page-group .page-item.one-pic {
+  text-align: center;
+}
+.page-group .page-item.one-pic .top {
+  height: 190px;
+  background-color: #1e1837;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.page-group .page-item.one-pic .img-holder {
+  position: relative;
+  top: -67px;
+}
+.page-group .page-item.one-pic .img-holder img,
+.page-group .page-item.one-pic .img-holder .upload-img {
+  width: 130px;
+  height: 130px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid #e0e0e0;
+}
+.page-group .page-item.one-pic .img-holder .upload-img {
+  line-height: 130px;
+  border-style: dotted;
+  background-color: #fff;
+}
+.page-group .page-item.one-pic .text-group {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
+}
+.page-group .page-item.one-pic .text-group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.page-group .page-item.one-pic .text-group .text-holder {
+  float: left;
+  padding: 10px 7px;
+  line-height: 22px;
+  font-size: 14px;
+}
+.page-group .page-item.one-pic .text-group .text-holder .text-body {
+  width: 14px;
+}
+.page-group .page-item.one-pic .text-group .text-holder textarea {
+  width: 14px;
+  padding: 0;
+}
+.page-group .page-item.endPage {
+  background-image: url(../images/lover/cover-bg3.png);
+  background-repeat: repeat;
+  -webkit-background-size: 25% 25%;
+  background-size: 25% 25%;
+}
+.page-group .page-item.endPage .top {
+  height: 50%;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding-top: 30%;
+  color: #0c8989;
+}
+.page-group .page-item.endPage .top:last-child {
+  border-bottom: none;
+}
+.page-group .page-item.endPage .top a {
+  display: block;
+}
+.page-group .page-item.endPage .top .iconfont {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+}
+.page-list .item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height: 600px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.page-list .item .page-item {
+  display: block;
+}
+.menu-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background-color: #2e3548;
+  z-index: 9999;
+  display: flex;
+}
+.menu-bottom .menu-item {
+  flex: 1;
+  -ms-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-webkit-flex: 1;
+  -ms-webkit-flex: 1;
+  -o-webkit-flex: 1;
+  webkit-flex: 1;
+  display: block;
+  text-align: center;
+  line-height: 45px;
+  -webkit-tap-highlight-color: transparent;
+}
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9995;
+  display: none;
+}
+.menu-list {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  padding: 10px;
+}
+.menu-list:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.menu-list .item {
+  float: left;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.menu-list .item .iconfont {
+  display: block;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin: 0 auto 10px;
+  background-color: #fff;
+  color: #000;
+}
+.menu-list .item .iconfont.back {
+  line-height: 31px;
+  padding-left: 3px;
+}
+.menu-list .item .iconfont.up {
+  line-height: 31px;
+}
+.menu-list .item .iconfont.left {
+  border-left: 2px solid #000;
+}
+.menu-list .item .iconfont.right {
+  border-right: 2px solid #000;
+}
+.round {
+  border: 1px solid #e0e0e0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 28px;
+  padding: 0 18px;
+  margin-top: 9px;
 }
