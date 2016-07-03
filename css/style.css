@@ -761,12 +761,6 @@ textarea:visited {
 .menu-list .item .iconfont.up {
   line-height: 31px;
 }
-.menu-list .item .iconfont.left {
-  border-left: 2px solid #000;
-}
-.menu-list .item .iconfont.right {
-  border-right: 2px solid #000;
-}
 .round {
   border: 1px solid #e0e0e0;
   -webkit-border-radius: 4px;

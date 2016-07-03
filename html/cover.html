@@ -186,11 +186,11 @@
     <div class="wrapper" id="menuList">
         <div class="menu-list">
             <a href="javascript:;" class="item">
-                <span class="iconfont left">&#xe612;</span>
+                <span class="iconfont ">&#xe612;</span>
                 前加一页
             </a>
             <a href="javascript:;" class="item">
-                <span class="iconfont right">&#xe612;</span>
+                <span class="iconfont ">&#xe612;</span>
                 后加一页
             </a>
             <a href="javascript:;" class="item">
@@ -222,6 +222,34 @@
             var target = $(this).attr('href')
             $(target).toggle();
         });
+
+        $('body').on('click', '[data-function="copy"]' ,function(e){
+            e.preventDefault();
+            //复制当前页面
+            var curPage = getCurPage();
+            curPage.after(curPage.clone());
+            curPage.removeClass('active');
+            setTotalPages() ;
+            setMenu() ;
+            //var target = $(this).attr('href');
+        });
+
+        function getCurPage() {
+            return $('#page_workSpace .page-item.active');
+        }
+
+        function setTotalPages(){
+            var pages = $('#page_workSpace .page-group .page-item');
+            var totalPage = pages.length -1 ;
+            var curPage = 1 ;
+            pages.each(function () {
+                if($(this).hasClass('active')) {
+                  curPage = $(this).index() ;
+                }
+            });
+            $('.menu-bottom .page-count').text(curPage + "/" + totalPage );
+        }
+
     </script>
 </body>
 </html>
