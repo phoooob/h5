@@ -217,21 +217,22 @@
 
     <script src="../js/zepto.min.js"></script>
     <script>
-        $('body').on('click', '[data-toggle="wrapper"]' ,function(e){
+        $('body').on('click', '[data-function="addPrev"]' ,function(e){
             e.preventDefault();
-            var target = $(this).attr('href')
-            $(target).toggle();
+            var curPage = getCurPage() ;
+            curPage.before('<div class="add-mao"></div>');
+            NP_component.swit
         });
 
-        $('body').on('click', '[data-function="copy"]' ,function(e){
+        $('body').on('swipeUp',function(e){
             e.preventDefault();
-            //复制当前页面
-            var curPage = getCurPage();
-            curPage.after(curPage.clone());
-            curPage.removeClass('active');
-            setTotalPages() ;
-            setMenu() ;
-            //var target = $(this).attr('href');
+            var curPage = $('#page_workSpace .page-group .page-item.active');
+            curPage.removeClass('active')
+            var next = curPage.next()
+            if(next.length == 0) {
+              next = $('#page_workSpace .page-group .page-item').eq(0);
+            }
+            next.addClass('active');
         });
 
         function getCurPage() {
