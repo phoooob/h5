@@ -42,7 +42,7 @@ html,
 .img-holder .upload-img {
   display: none;
 }
-.edit .img-holder {
+.edit img {
   display: none;
 }
 .edit .upload-img {
@@ -638,7 +638,7 @@ textarea:visited {
 }
 .page-group .page-item.one-pic .text-group .text-holder {
   float: left;
-  padding: 10px 7px;
+  padding: 10px 6px;
   line-height: 22px;
   font-size: 14px;
 }
@@ -646,7 +646,7 @@ textarea:visited {
   width: 14px;
 }
 .page-group .page-item.one-pic .text-group .text-holder textarea {
-  width: 14px;
+  width: 19px;
   padding: 0;
 }
 .page-group .page-item.endPage {
